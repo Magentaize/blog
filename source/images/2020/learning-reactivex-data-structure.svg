@@ -1,0 +1,64 @@
+<svg height="336" width="504" xmlns="http://www.w3.org/2000/svg">
+<style>
+line, path, circle,rect,polygon {
+    stroke: black;
+    stroke-width: 2;
+    stroke-opacity: 1;
+    fill-opacity: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+}
+text {
+    fill: black;
+}
+rect.backdrop{
+    stroke: none;
+    fill: white;
+}
+.broken{
+    stroke-dasharray: 8;
+}
+.filled{
+    fill: black;
+}
+.bg_filled{
+    fill: white;
+}
+.nofill{
+    fill: white;
+}
+text {
+ font-family: monospace;
+ font-size: 14px;
+}
+.end_marked_arrow{
+    marker-end: url(#arrow);
+ }
+.start_marked_arrow{
+    marker-start: url(#arrow);
+ }
+.end_marked_diamond{
+    marker-end: url(#diamond);
+ }
+.start_marked_diamond{
+    marker-start: url(#diamond);
+ }
+.end_marked_circle{
+    marker-end: url(#circle);
+ }
+.start_marked_circle{
+    marker-start: url(#circle);
+ }
+.end_marked_open_circle{
+    marker-end: url(#open_circle);
+ }
+.start_marked_open_circle{
+    marker-start: url(#open_circle);
+ }
+.end_marked_big_open_circle{
+    marker-end: url(#big_open_circle);
+ }
+.start_marked_big_open_circle{
+    marker-start: url(#big_open_circle);
+ }                   
+</style><defs><marker id="arrow" markerHeight="7" markerWidth="7" orient="auto-start-reverse" refX="4" refY="2" viewBox="-2 -2 8 8"><polygon points="0,0 0,4 4,2 0,0"></polygon></marker><marker id="diamond" markerHeight="7" markerWidth="7" orient="auto-start-reverse" refX="4" refY="2" viewBox="-2 -2 8 8"><polygon points="0,2 2,0 4,2 2,4 0,2"></polygon></marker><marker id="circle" markerHeight="7" markerWidth="7" orient="auto-start-reverse" refX="4" refY="4" viewBox="0 0 8 8"><circle class="filled" cx="4" cy="4" r="2"></circle></marker><marker id="open_circle" markerHeight="7" markerWidth="7" orient="auto-start-reverse" refX="4" refY="4" viewBox="0 0 8 8"><circle class="bg_filled" cx="4" cy="4" r="2"></circle></marker><marker id="big_open_circle" markerHeight="7" markerWidth="7" orient="auto-start-reverse" refX="4" refY="4" viewBox="0 0 8 8"><circle class="bg_filled" cx="4" cy="4" r="3"></circle></marker></defs><rect class="backdrop" height="336" width="504" x="0" y="0"></rect><text class="" x="66" y="28">Artist</text><text class="" x="226" y="28">Album</text><text class="" x="386" y="28">Track</text><text class="" x="66" y="60">Id</text><text class="" x="226" y="60">Id</text><text class="" x="386" y="60">Id</text><text class="" x="66" y="76">Albums</text><text class="" x="226" y="76">Tracks</text><line class="solid end_marked_arrow " x1="76" x2="76" y1="104" y2="224"></line><line class="solid end_marked_arrow " x1="252" x2="252" y1="136" y2="176"></line><line class="solid end_marked_arrow " x1="412" x2="412" y1="136" y2="176"></line><text class="" x="194" y="188">SelectMany</text><path class="nofill " d="M 280,176 A 16,16 0,0,0 280,192"></path><text class="" x="282" y="188">Albums</text><path class="nofill " d="M 328,176 A 16,16 0,0,1 328,192"></path><text class="" x="354" y="188">SelectMany</text><path class="nofill " d="M 440,176 A 16,16 0,0,0 440,192"></path><text class="" x="442" y="188">Tracks</text><path class="nofill " d="M 488,176 A 16,16 0,0,1 488,192"></path><line class="solid end_marked_arrow " x1="252" x2="252" y1="192" y2="224"></line><line class="solid end_marked_arrow " x1="412" x2="412" y1="192" y2="224"></line><text class="" x="50" y="236">Select</text><text class="" x="226" y="236">Select</text><text class="" x="386" y="236">Select</text><text class="" x="10" y="252">&lt;Artist,ArtistVM&gt;</text><text class="" x="194" y="252">&lt;Album,AlbumVM&gt;</text><text class="" x="354" y="252">&lt;Track,TrackVM&gt;</text><line class="solid end_marked_arrow " x1="76" x2="76" y1="256" y2="288"></line><line class="solid end_marked_arrow " x1="252" x2="252" y1="256" y2="288"></line><line class="solid end_marked_arrow " x1="412" x2="412" y1="256" y2="288"></line><text class="" x="2" y="300">ObservableCollection</text><text class="" x="170" y="300">ObservableCollection</text><text class="" x="338" y="300">ObservableCollection</text><text class="" x="42" y="316">&lt;ArtistVM&gt;</text><text class="" x="218" y="316">&lt;AlbumVM&gt;</text><text class="" x="378" y="316">&lt;TrackVM&gt;</text><g><line class="solid" x1="60" x2="124" y1="8" y2="8"></line><line class="solid" x1="60" x2="60" y1="8" y2="104"></line><line class="solid" x1="124" x2="124" y1="8" y2="64"></line><line class="solid" x1="60" x2="124" y1="40" y2="40"></line><line class="solid" x1="124" x2="124" y1="80" y2="104"></line><line class="solid" x1="60" x2="124" y1="104" y2="104"></line><line class="solid" x1="108" x2="108" y1="104" y2="136"></line><line class="solid" x1="108" x2="252" y1="136" y2="136"></line></g><g><line class="solid" x1="220" x2="284" y1="8" y2="8"></line><line class="solid" x1="220" x2="220" y1="8" y2="104"></line><line class="solid" x1="284" x2="284" y1="8" y2="64"></line><line class="solid" x1="172" x2="220" y1="24" y2="24"></line><line class="solid" x1="172" x2="172" y1="24" y2="72"></line><line class="solid" x1="220" x2="284" y1="40" y2="40"></line><circle class="nofill" cx="116" cy="72" r="2"></circle><line class="solid" x1="116" x2="172" y1="72" y2="72"></line><line class="solid" x1="284" x2="284" y1="80" y2="104"></line><line class="solid" x1="220" x2="284" y1="104" y2="104"></line><line class="solid" x1="268" x2="268" y1="104" y2="136"></line><line class="solid" x1="268" x2="412" y1="136" y2="136"></line></g><g><line class="solid" x1="380" x2="444" y1="8" y2="8"></line><line class="solid" x1="380" x2="380" y1="8" y2="104"></line><line class="solid" x1="444" x2="444" y1="8" y2="104"></line><line class="solid" x1="332" x2="380" y1="24" y2="24"></line><line class="solid" x1="332" x2="332" y1="24" y2="72"></line><line class="solid" x1="380" x2="444" y1="40" y2="40"></line><line class="solid" x1="380" x2="444" y1="104" y2="104"></line><circle class="nofill" cx="276" cy="72" r="2"></circle><line class="solid" x1="276" x2="332" y1="72" y2="72"></line></g></svg>
