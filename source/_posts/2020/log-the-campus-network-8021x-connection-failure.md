@@ -1,8 +1,7 @@
 ---
 title: 记校园网 802.1X 连接频繁掉线
 date: 2020-12-23 11:43:54
-categories: 
- - Tech
+categories: Tech
 ---
 
 <div class="banner-img">

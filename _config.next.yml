@@ -52,6 +52,22 @@ favicon:
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
+# Custom Logo (Do not support scheme Mist)
+custom_logo: #/uploads/custom-logo.jpg
+
+# Creative Commons 4.0 International License.
+# See: https://creativecommons.org/about/cclicenses/
+creative_commons:
+  # Available values: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | cc-zero
+  license: by-nc-sa
+  # Available values: big | small
+  size: small
+  sidebar: true
+  post: true
+  # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
+  # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
+  language:
+
 # Show multilingual switcher in footer.
 language_switcher: false
 
@@ -69,7 +85,7 @@ footer:
     color: "#ff0000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright:
+  copyright: Magentaize!
 
   # Powered by Hexo & NexT
   powered: true
@@ -84,17 +100,6 @@ footer:
     gongan_num:
     # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
     gongan_icon_url:
-
-# Creative Commons 4.0 International License.
-# See: https://creativecommons.org/share-your-work/licensing-types-examples
-# Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-# You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
-# CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
-creative_commons:
-  license: by-nc-sa
-  sidebar: true
-  post: true
-  language:
 
 
 # ---------------------------------------------------------------
@@ -355,8 +360,12 @@ mobile_layout_economy: false
 # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
 android_chrome_color: "#222"
 
-# Custom Logo (Do not support scheme Mist)
-custom_logo: #/uploads/custom-logo.jpg
+# Override browsers' default behavior.
+body_scrollbar:
+  # Place the scrollbar over the content.
+  overlay: false
+  # Present the scrollbar even if the content is not overflowing.
+  stable: false
 
 codeblock:
   # Code Highlight theme
