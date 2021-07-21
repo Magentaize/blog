@@ -115,15 +115,17 @@ style="width: 50%;">
 
 However the task is real-time detection, I cannot predict the future data and use it. Thence I try to use the difference (i.e. trend) of curve to find out peaks. After getting difference, according to the characteristics of the first derivative, the original function at this point meets a vertex when the sign of the derivative changes.
 
-The following is the visualized progress.
+The following is the visualized progress (normalized).
+<img src="/images/2021/peak-finding-circuit.png"
+style="width: 80%;">
 <div style="display: grid; grid-template-columns: repeat(2, 1fr)">
-<img src="/images/2021/peek-finding-curve-raw.png"
+<img src="/images/2021/peak-finding-curve-raw.png"
 style="width: 90%;">
-<img src="/images/2021/peek-finding-curve-diff.png"
+<img src="/images/2021/peak-finding-curve-diff.png"
 style="width: 90%;">
-<img src="/images/2021/peek-finding-curve-diff-signal.png"
+<img src="/images/2021/peak-finding-curve-diff-signal.png"
 style="width: 90%;">
-<img src="/images/2021/peek-finding-curve-peak-signal.png"
+<img src="/images/2021/peak-finding-curve-peak-signal.png"
 style="width: 90%;">
 </div>
 
