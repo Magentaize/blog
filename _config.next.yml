@@ -226,15 +226,6 @@ toc:
   # Maximum heading depth of generated toc.
   max_depth: 6
 
-# A button to open designated chat widget in sidebar.
-# Firstly, you need enable the chat service you want to activate its sidebar button.
-chat:
-  enable: false
-  #service: chatra
-  #service: tidio
-  icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
-  text: Chat # Button text, change it as you wish.
-
 
 # ---------------------------------------------------------------
 # Post Settings
@@ -357,8 +348,10 @@ text_align:
 # Reduce padding / margin indents on devices with narrow width.
 mobile_layout_economy: false
 
-# Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
-android_chrome_color: "#222"
+# Browser header panel color.
+theme_color:
+  light: "#222"
+  dark: "#222"
 
 # Override browsers' default behavior.
 body_scrollbar:
@@ -395,9 +388,12 @@ back2top:
 # Reading progress bar
 reading_progress:
   enable: false
+  # Available values: left | right
+  startAt: left
   # Available values: top | bottom
   position: top
-  color: "#37c6c0"
+  reversed: false
+  color: "var(--text-color)"
   height: 3px
 
 # Bookmark Support
@@ -745,6 +741,13 @@ local_search:
 # See: https://theme-next.js.org/docs/third-party-services/chat-services
 # ---------------------------------------------------------------
 
+# A button to open designated chat widget in sidebar.
+# Firstly, you need to enable and configure the chat service.
+chat:
+  enable: false
+  icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
+  text: Chat # Button text, change it as you wish.
+
 # Chatra Support
 # See: https://chatra.io
 # Dashboard: https://app.chatra.io/settings/general
@@ -760,6 +763,12 @@ chatra:
 tidio:
   enable: false
   key: # Public Key, get it from dashboard. See: https://www.tidiochat.com/panel/settings/developer
+
+# Gitter Support
+# For more information: https://gitter.im
+gitter:
+  enable: false
+  room:
 
 
 # ---------------------------------------------------------------
@@ -820,10 +829,17 @@ motion:
     sidebar: fadeInUp
 
 # Progress bar in the top during page loading.
-# For more information: https://github.com/rstacruz/nprogress
-nprogress:
+# For more information: https://github.com/CodeByZach/pace
+pace:
   enable: true
   spinner: false
+  # All available colors:
+  # black | blue | green | orange | pink | purple | red | silver | white | yellow
+  color: black
+  # All available themes:
+  # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
+  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
+  theme: minimal
 
 # Canvas ribbon
 # For more information: https://github.com/hustcc/ribbon.js
@@ -918,10 +934,6 @@ vendors:
   # Animate.css
   # Warning: motion won't work with animate.css version 3.2.0 or later
   animate_css:
-
-  # NProgress.js
-  nprogress_js:
-  nprogress_css:
 
   # Canvas ribbon
   canvas_ribbon:
